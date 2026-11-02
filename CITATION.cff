@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Original Bitcoin Script: an executable model of the 0.1.5 interpreter with machine-checked constructions"
+version: 1.0.0
+date-released: 2026-11-02
+license: MIT
+repository-code: "https://github.com/prof-faustus/original-bitcoin-script"
+authors:
+  - family-names: Wright
+    given-names: Craig Steven
+    orcid: "https://orcid.org/0000-0001-9374-0507"
+    affiliation: "University of Exeter Business School"

@@ -1,0 +1,3020 @@
+{
+ "checks": [
+  {
+   "name": "CBigNum getvch matches known little-endian sign-magnitude vectors",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "CBigNum round trip for -70000..70000",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "CBigNum has no size bound (3^400 round trip)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0.1.5 model reproduces the OP_1 OP_RETURN acceptance defect",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "an empty unlocking script does not satisfy the same locking script",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OP_MUL on 200-bit and 159-bit operands is exact in the 0.1.5 model",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "OP_CAT concatenates in the 0.1.5 model",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k n=0: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=1, 376 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=0: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_EQUAL,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=0 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k n=1: script = reference TM = membership on all 3 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=2, 751 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=1: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=2: script = reference TM = membership on all 9 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=3, 1126 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=2: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=3: script = reference TM = membership on all 27 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=8, 2993 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=3: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=3 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k n=4: script = reference TM = membership on all 81 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=10, 3741 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=4: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=5: script = reference TM = membership on all 243 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=14, 5235 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=5: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=6: script = reference TM = membership on all 729 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=23, 8594 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=6: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=6 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k n=7: script = reference TM = membership on all 2187 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=26, 9715 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=7: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=9: script = reference TM = membership on all 352 inputs (sorted forms + 300 random)",
+   "pass": true,
+   "detail": "T=46, 17179 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=9: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=9 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k n=12: script = reference TM = membership on all 391 inputs (sorted forms + 300 random)",
+   "pass": true,
+   "detail": "T=77, 28748 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=12: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=12 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k n=15: script = reference TM = membership on all 436 inputs (sorted forms + 300 random)",
+   "pass": true,
+   "detail": "T=116, 43301 bytes"
+  },
+  {
+   "name": "a^k b^k c^k n=15: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "a^k b^k c^k n=15 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=0: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=1, 194 bytes"
+  },
+  {
+   "name": "0^(2^k) n=0: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_EQUAL,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=1: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=2, 387 bytes"
+  },
+  {
+   "name": "0^(2^k) n=1: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=1 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=2: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=7, 1344 bytes"
+  },
+  {
+   "name": "0^(2^k) n=2: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=2 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=3: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=4, 773 bytes"
+  },
+  {
+   "name": "0^(2^k) n=3: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=4: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=21, 4022 bytes"
+  },
+  {
+   "name": "0^(2^k) n=4: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=4 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=5: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=6, 1159 bytes"
+  },
+  {
+   "name": "0^(2^k) n=5: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=6: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=19, 3644 bytes"
+  },
+  {
+   "name": "0^(2^k) n=6: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=7: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=8, 1545 bytes"
+  },
+  {
+   "name": "0^(2^k) n=7: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=8: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=57, 10906 bytes"
+  },
+  {
+   "name": "0^(2^k) n=8: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=8 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=9: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=10, 1931 bytes"
+  },
+  {
+   "name": "0^(2^k) n=9: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=10: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=31, 5944 bytes"
+  },
+  {
+   "name": "0^(2^k) n=10: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=11: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=12, 2317 bytes"
+  },
+  {
+   "name": "0^(2^k) n=11: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=12: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=61, 11678 bytes"
+  },
+  {
+   "name": "0^(2^k) n=12: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=13: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=14, 2703 bytes"
+  },
+  {
+   "name": "0^(2^k) n=13: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=14: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=43, 8244 bytes"
+  },
+  {
+   "name": "0^(2^k) n=14: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=15: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=16, 3089 bytes"
+  },
+  {
+   "name": "0^(2^k) n=15: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=16: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=145, 27730 bytes"
+  },
+  {
+   "name": "0^(2^k) n=16: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=16 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=17: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=18, 3475 bytes"
+  },
+  {
+   "name": "0^(2^k) n=17: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=18: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=55, 10544 bytes"
+  },
+  {
+   "name": "0^(2^k) n=18: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=19: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=20, 3861 bytes"
+  },
+  {
+   "name": "0^(2^k) n=19: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=20: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=101, 19334 bytes"
+  },
+  {
+   "name": "0^(2^k) n=20: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=21: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=22, 4247 bytes"
+  },
+  {
+   "name": "0^(2^k) n=21: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=22: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=67, 12844 bytes"
+  },
+  {
+   "name": "0^(2^k) n=22: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=23: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=24, 4633 bytes"
+  },
+  {
+   "name": "0^(2^k) n=23: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=24: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=169, 32330 bytes"
+  },
+  {
+   "name": "0^(2^k) n=24: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=25: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=26, 5019 bytes"
+  },
+  {
+   "name": "0^(2^k) n=25: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=26: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=79, 15144 bytes"
+  },
+  {
+   "name": "0^(2^k) n=26: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=27: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=28, 5405 bytes"
+  },
+  {
+   "name": "0^(2^k) n=27: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=28: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=141, 26990 bytes"
+  },
+  {
+   "name": "0^(2^k) n=28: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=29: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=30, 5791 bytes"
+  },
+  {
+   "name": "0^(2^k) n=29: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=30: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=91, 17444 bytes"
+  },
+  {
+   "name": "0^(2^k) n=30: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=31: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=32, 6177 bytes"
+  },
+  {
+   "name": "0^(2^k) n=31: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=32: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=353, 67490 bytes"
+  },
+  {
+   "name": "0^(2^k) n=32: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=32 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=33: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=34, 6563 bytes"
+  },
+  {
+   "name": "0^(2^k) n=33: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=34: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=103, 19744 bytes"
+  },
+  {
+   "name": "0^(2^k) n=34: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=35: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=36, 6949 bytes"
+  },
+  {
+   "name": "0^(2^k) n=35: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=36: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=181, 34646 bytes"
+  },
+  {
+   "name": "0^(2^k) n=36: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=37: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=38, 7335 bytes"
+  },
+  {
+   "name": "0^(2^k) n=37: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=38: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=115, 22044 bytes"
+  },
+  {
+   "name": "0^(2^k) n=38: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=39: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=40, 7721 bytes"
+  },
+  {
+   "name": "0^(2^k) n=39: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=40: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=281, 53754 bytes"
+  },
+  {
+   "name": "0^(2^k) n=40: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=64: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=833, 159234 bytes"
+  },
+  {
+   "name": "0^(2^k) n=64: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=64 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0^(2^k) n=128: script = reference TM = membership on all 1 inputs (exhaustive)",
+   "pass": true,
+   "detail": "T=1921, 367170 bytes"
+  },
+  {
+   "name": "0^(2^k) n=128: only never-disabled opcodes executed",
+   "pass": true,
+   "detail": "OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK"
+  },
+  {
+   "name": "0^(2^k) n=128 control: T-1 steps rejects the slowest accepted input",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "control: mutated a^k b^k c^k machine disagrees with membership",
+   "pass": true,
+   "detail": "5 of 243 inputs"
+  },
+  {
+   "name": "Ackermann A(0,0)=1 verified in 1 unrolled iterations",
+   "pass": true,
+   "detail": "37 bytes, alt depth 2"
+  },
+  {
+   "name": "Ackermann A(0,1)=2 verified in 1 unrolled iterations",
+   "pass": true,
+   "detail": "37 bytes, alt depth 2"
+  },
+  {
+   "name": "Ackermann A(0,2)=3 verified in 1 unrolled iterations",
+   "pass": true,
+   "detail": "37 bytes, alt depth 2"
+  },
+  {
+   "name": "Ackermann A(0,3)=4 verified in 1 unrolled iterations",
+   "pass": true,
+   "detail": "37 bytes, alt depth 2"
+  },
+  {
+   "name": "Ackermann A(0,4)=5 verified in 1 unrolled iterations",
+   "pass": true,
+   "detail": "37 bytes, alt depth 2"
+  },
+  {
+   "name": "Ackermann A(1,0)=2 verified in 2 unrolled iterations",
+   "pass": true,
+   "detail": "66 bytes, alt depth 2"
+  },
+  {
+   "name": "Ackermann A(1,1)=3 verified in 4 unrolled iterations",
+   "pass": true,
+   "detail": "124 bytes, alt depth 3"
+  },
+  {
+   "name": "Ackermann A(1,2)=4 verified in 6 unrolled iterations",
+   "pass": true,
+   "detail": "182 bytes, alt depth 4"
+  },
+  {
+   "name": "Ackermann A(1,3)=5 verified in 8 unrolled iterations",
+   "pass": true,
+   "detail": "240 bytes, alt depth 5"
+  },
+  {
+   "name": "Ackermann A(1,4)=6 verified in 10 unrolled iterations",
+   "pass": true,
+   "detail": "298 bytes, alt depth 6"
+  },
+  {
+   "name": "Ackermann A(2,0)=3 verified in 5 unrolled iterations",
+   "pass": true,
+   "detail": "153 bytes, alt depth 3"
+  },
+  {
+   "name": "Ackermann A(2,1)=5 verified in 14 unrolled iterations",
+   "pass": true,
+   "detail": "414 bytes, alt depth 5"
+  },
+  {
+   "name": "Ackermann A(2,2)=7 verified in 27 unrolled iterations",
+   "pass": true,
+   "detail": "791 bytes, alt depth 7"
+  },
+  {
+   "name": "Ackermann A(2,3)=9 verified in 44 unrolled iterations",
+   "pass": true,
+   "detail": "1284 bytes, alt depth 9"
+  },
+  {
+   "name": "Ackermann A(2,4)=11 verified in 65 unrolled iterations",
+   "pass": true,
+   "detail": "1893 bytes, alt depth 11"
+  },
+  {
+   "name": "Ackermann A(3,0)=5 verified in 15 unrolled iterations",
+   "pass": true,
+   "detail": "443 bytes, alt depth 5"
+  },
+  {
+   "name": "Ackermann A(3,1)=13 verified in 106 unrolled iterations",
+   "pass": true,
+   "detail": "3082 bytes, alt depth 13"
+  },
+  {
+   "name": "Ackermann A(3,2)=29 verified in 541 unrolled iterations",
+   "pass": true,
+   "detail": "15697 bytes, alt depth 29"
+  },
+  {
+   "name": "Ackermann A(3,3)=61 verified in 2432 unrolled iterations",
+   "pass": true,
+   "detail": "70536 bytes, alt depth 61"
+  },
+  {
+   "name": "Ackermann A(3,4)=125 verified in 10307 unrolled iterations",
+   "pass": true,
+   "detail": "298911 bytes, alt depth 125"
+  }
+ ],
+ "tm": [
+  {
+   "machine": "a^k b^k c^k",
+   "n": 0,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 1,
+   "lock_bytes": 376,
+   "max_main": 4,
+   "max_alt": 1,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_EQUAL",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 1,
+   "mode": "exhaustive",
+   "inputs": 3,
+   "agree": 3,
+   "accepted": 0,
+   "T": 2,
+   "lock_bytes": 751,
+   "max_main": 6,
+   "max_alt": 3,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 2,
+   "mode": "exhaustive",
+   "inputs": 9,
+   "agree": 9,
+   "accepted": 0,
+   "T": 3,
+   "lock_bytes": 1126,
+   "max_main": 8,
+   "max_alt": 5,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 3,
+   "mode": "exhaustive",
+   "inputs": 27,
+   "agree": 27,
+   "accepted": 1,
+   "T": 8,
+   "lock_bytes": 2993,
+   "max_main": 14,
+   "max_alt": 11,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 4,
+   "mode": "exhaustive",
+   "inputs": 81,
+   "agree": 81,
+   "accepted": 0,
+   "T": 10,
+   "lock_bytes": 3741,
+   "max_main": 17,
+   "max_alt": 14,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 5,
+   "mode": "exhaustive",
+   "inputs": 243,
+   "agree": 243,
+   "accepted": 0,
+   "T": 14,
+   "lock_bytes": 5235,
+   "max_main": 22,
+   "max_alt": 19,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 6,
+   "mode": "exhaustive",
+   "inputs": 729,
+   "agree": 729,
+   "accepted": 1,
+   "T": 23,
+   "lock_bytes": 8594,
+   "max_main": 32,
+   "max_alt": 29,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 7,
+   "mode": "exhaustive",
+   "inputs": 2187,
+   "agree": 2187,
+   "accepted": 0,
+   "T": 26,
+   "lock_bytes": 9715,
+   "max_main": 36,
+   "max_alt": 33,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 9,
+   "mode": "sorted forms + 300 random",
+   "inputs": 352,
+   "agree": 352,
+   "accepted": 1,
+   "T": 46,
+   "lock_bytes": 17179,
+   "max_main": 58,
+   "max_alt": 55,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 12,
+   "mode": "sorted forms + 300 random",
+   "inputs": 391,
+   "agree": 391,
+   "accepted": 1,
+   "T": 77,
+   "lock_bytes": 28748,
+   "max_main": 92,
+   "max_alt": 89,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "n": 15,
+   "mode": "sorted forms + 300 random",
+   "inputs": 436,
+   "agree": 436,
+   "accepted": 1,
+   "T": 116,
+   "lock_bytes": 43301,
+   "max_main": 134,
+   "max_alt": 131,
+   "max_if_depth": 12,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 0,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 1,
+   "lock_bytes": 194,
+   "max_main": 4,
+   "max_alt": 1,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_EQUAL",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 1,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 2,
+   "lock_bytes": 387,
+   "max_main": 6,
+   "max_alt": 4,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 2,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 7,
+   "lock_bytes": 1344,
+   "max_main": 12,
+   "max_alt": 10,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 3,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 4,
+   "lock_bytes": 773,
+   "max_main": 10,
+   "max_alt": 8,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 4,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 21,
+   "lock_bytes": 4022,
+   "max_main": 28,
+   "max_alt": 26,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 5,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 6,
+   "lock_bytes": 1159,
+   "max_main": 14,
+   "max_alt": 12,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 6,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 19,
+   "lock_bytes": 3644,
+   "max_main": 28,
+   "max_alt": 26,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 7,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 8,
+   "lock_bytes": 1545,
+   "max_main": 18,
+   "max_alt": 16,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 8,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 57,
+   "lock_bytes": 10906,
+   "max_main": 68,
+   "max_alt": 66,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 9,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 10,
+   "lock_bytes": 1931,
+   "max_main": 22,
+   "max_alt": 20,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 10,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 31,
+   "lock_bytes": 5944,
+   "max_main": 44,
+   "max_alt": 42,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 11,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 12,
+   "lock_bytes": 2317,
+   "max_main": 26,
+   "max_alt": 24,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 12,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 61,
+   "lock_bytes": 11678,
+   "max_main": 76,
+   "max_alt": 74,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 13,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 14,
+   "lock_bytes": 2703,
+   "max_main": 30,
+   "max_alt": 28,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 14,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 43,
+   "lock_bytes": 8244,
+   "max_main": 60,
+   "max_alt": 58,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 15,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 16,
+   "lock_bytes": 3089,
+   "max_main": 34,
+   "max_alt": 32,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 16,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 145,
+   "lock_bytes": 27730,
+   "max_main": 164,
+   "max_alt": 162,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 17,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 18,
+   "lock_bytes": 3475,
+   "max_main": 38,
+   "max_alt": 36,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 18,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 55,
+   "lock_bytes": 10544,
+   "max_main": 76,
+   "max_alt": 74,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 19,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 20,
+   "lock_bytes": 3861,
+   "max_main": 42,
+   "max_alt": 40,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 20,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 101,
+   "lock_bytes": 19334,
+   "max_main": 124,
+   "max_alt": 122,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 21,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 22,
+   "lock_bytes": 4247,
+   "max_main": 46,
+   "max_alt": 44,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 22,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 67,
+   "lock_bytes": 12844,
+   "max_main": 92,
+   "max_alt": 90,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 23,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 24,
+   "lock_bytes": 4633,
+   "max_main": 50,
+   "max_alt": 48,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 24,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 169,
+   "lock_bytes": 32330,
+   "max_main": 196,
+   "max_alt": 194,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 25,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 26,
+   "lock_bytes": 5019,
+   "max_main": 54,
+   "max_alt": 52,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 26,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 79,
+   "lock_bytes": 15144,
+   "max_main": 108,
+   "max_alt": 106,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 27,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 28,
+   "lock_bytes": 5405,
+   "max_main": 58,
+   "max_alt": 56,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 28,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 141,
+   "lock_bytes": 26990,
+   "max_main": 172,
+   "max_alt": 170,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 29,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 30,
+   "lock_bytes": 5791,
+   "max_main": 62,
+   "max_alt": 60,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 30,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 91,
+   "lock_bytes": 17444,
+   "max_main": 124,
+   "max_alt": 122,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 31,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 32,
+   "lock_bytes": 6177,
+   "max_main": 66,
+   "max_alt": 64,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 32,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 353,
+   "lock_bytes": 67490,
+   "max_main": 388,
+   "max_alt": 386,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 33,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 34,
+   "lock_bytes": 6563,
+   "max_main": 70,
+   "max_alt": 68,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 34,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 103,
+   "lock_bytes": 19744,
+   "max_main": 140,
+   "max_alt": 138,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 35,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 36,
+   "lock_bytes": 6949,
+   "max_main": 74,
+   "max_alt": 72,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 36,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 181,
+   "lock_bytes": 34646,
+   "max_main": 220,
+   "max_alt": 218,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 37,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 38,
+   "lock_bytes": 7335,
+   "max_main": 78,
+   "max_alt": 76,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 38,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 115,
+   "lock_bytes": 22044,
+   "max_main": 156,
+   "max_alt": 154,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 39,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 40,
+   "lock_bytes": 7721,
+   "max_main": 82,
+   "max_alt": 80,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 40,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 0,
+   "T": 281,
+   "lock_bytes": 53754,
+   "max_main": 324,
+   "max_alt": 322,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 64,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 833,
+   "lock_bytes": 159234,
+   "max_main": 900,
+   "max_alt": 898,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "machine": "0^(2^k)",
+   "n": 128,
+   "mode": "exhaustive",
+   "inputs": 1,
+   "agree": 1,
+   "accepted": 1,
+   "T": 1921,
+   "lock_bytes": 367170,
+   "max_main": 2052,
+   "max_alt": 2050,
+   "max_if_depth": 8,
+   "opcodes_used": [
+    "OP_1",
+    "OP_2",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_TOALTSTACK"
+   ]
+  }
+ ],
+ "ackermann": [
+  {
+   "m": 0,
+   "n": 0,
+   "A": 1,
+   "T": 1,
+   "lock_bytes": 37,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 2,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 0,
+   "n": 1,
+   "A": 2,
+   "T": 1,
+   "lock_bytes": 37,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 2,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_2",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 0,
+   "n": 2,
+   "A": 3,
+   "T": 1,
+   "lock_bytes": 37,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 2,
+   "opcodes_used": [
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_2",
+    "OP_3",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 0,
+   "n": 3,
+   "A": 4,
+   "T": 1,
+   "lock_bytes": 37,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 2,
+   "opcodes_used": [
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_3",
+    "OP_4",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 0,
+   "n": 4,
+   "A": 5,
+   "T": 1,
+   "lock_bytes": 37,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 2,
+   "opcodes_used": [
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_4",
+    "OP_5",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 1,
+   "n": 0,
+   "A": 2,
+   "T": 2,
+   "lock_bytes": 66,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 2,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 1,
+   "n": 1,
+   "A": 3,
+   "T": 4,
+   "lock_bytes": 124,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 3,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_3",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 1,
+   "n": 2,
+   "A": 4,
+   "T": 6,
+   "lock_bytes": 182,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 4,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_4",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 1,
+   "n": 3,
+   "A": 5,
+   "T": 8,
+   "lock_bytes": 240,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 5,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_3",
+    "OP_5",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 1,
+   "n": 4,
+   "A": 6,
+   "T": 10,
+   "lock_bytes": 298,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 6,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_4",
+    "OP_6",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 2,
+   "n": 0,
+   "A": 3,
+   "T": 5,
+   "lock_bytes": 153,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 3,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_3",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 2,
+   "n": 1,
+   "A": 5,
+   "T": 14,
+   "lock_bytes": 414,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 5,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_5",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 2,
+   "n": 2,
+   "A": 7,
+   "T": 27,
+   "lock_bytes": 791,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 7,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_7",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 2,
+   "n": 3,
+   "A": 9,
+   "T": 44,
+   "lock_bytes": 1284,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 9,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_3",
+    "OP_9",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 2,
+   "n": 4,
+   "A": 11,
+   "T": 65,
+   "lock_bytes": 1893,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 11,
+   "opcodes_used": [
+    "OP_1",
+    "OP_11",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_4",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 3,
+   "n": 0,
+   "A": 5,
+   "T": 15,
+   "lock_bytes": 443,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 5,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_3",
+    "OP_5",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 3,
+   "n": 1,
+   "A": 13,
+   "T": 106,
+   "lock_bytes": 3082,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 13,
+   "opcodes_used": [
+    "OP_1",
+    "OP_13",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_3",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 3,
+   "n": 2,
+   "A": 29,
+   "T": 541,
+   "lock_bytes": 15697,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 29,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_2",
+    "OP_3",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 3,
+   "n": 3,
+   "A": 61,
+   "T": 2432,
+   "lock_bytes": 70536,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 61,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_3",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  },
+  {
+   "m": 3,
+   "n": 4,
+   "A": 125,
+   "T": 10307,
+   "lock_bytes": 298911,
+   "valid": true,
+   "wrong_value_rejected": true,
+   "short_T_rejected": true,
+   "max_alt": 125,
+   "opcodes_used": [
+    "OP_1",
+    "OP_1ADD",
+    "OP_1NEGATE",
+    "OP_1SUB",
+    "OP_3",
+    "OP_4",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_IF",
+    "OP_NOT",
+    "OP_OVER",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ]
+  }
+ ],
+ "files": {
+  "script015_v01.py": "f2f5d0484d2c072dbc14ba8aa900ba5af80f85af461a78ba3cf2b9ab15896d1f",
+  "constructions_v01.py": "093a6a7b79f5f6ef5b01a3ee76ca759827143d9c07fb072938ca448efb19db4a",
+  "run_checks_v01.py": "73eb58e3ac784bed24bfd030f8a9e8c6128c85904696272951985e395705e4f7"
+ },
+ "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+ "time_utc": "2026-11-02T05:16:55Z",
+ "failures": 0
+}

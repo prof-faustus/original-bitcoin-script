@@ -1,0 +1,152 @@
+PASS CBigNum getvch matches known little-endian sign-magnitude vectors
+PASS CBigNum round trip for -70000..70000
+PASS CBigNum has no size bound (3^400 round trip)
+PASS 0.1.5 model reproduces the OP_1 OP_RETURN acceptance defect
+PASS an empty unlocking script does not satisfy the same locking script
+PASS OP_MUL on 200-bit and 159-bit operands is exact in the 0.1.5 model
+PASS OP_CAT concatenates in the 0.1.5 model
+PASS a^k b^k c^k n=0: script = reference TM = membership on all 1 inputs (exhaustive) | T=1, 376 bytes
+PASS a^k b^k c^k n=0: only never-disabled opcodes executed | OP_1,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_EQUAL,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=0 control: T-1 steps rejects the slowest accepted input
+PASS a^k b^k c^k n=1: script = reference TM = membership on all 3 inputs (exhaustive) | T=2, 751 bytes
+PASS a^k b^k c^k n=1: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=2: script = reference TM = membership on all 9 inputs (exhaustive) | T=3, 1126 bytes
+PASS a^k b^k c^k n=2: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=3: script = reference TM = membership on all 27 inputs (exhaustive) | T=8, 2993 bytes
+PASS a^k b^k c^k n=3: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=3 control: T-1 steps rejects the slowest accepted input
+PASS a^k b^k c^k n=4: script = reference TM = membership on all 81 inputs (exhaustive) | T=10, 3741 bytes
+PASS a^k b^k c^k n=4: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=5: script = reference TM = membership on all 243 inputs (exhaustive) | T=14, 5235 bytes
+PASS a^k b^k c^k n=5: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=6: script = reference TM = membership on all 729 inputs (exhaustive) | T=23, 8594 bytes
+PASS a^k b^k c^k n=6: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=6 control: T-1 steps rejects the slowest accepted input
+PASS a^k b^k c^k n=7: script = reference TM = membership on all 2187 inputs (exhaustive) | T=26, 9715 bytes
+PASS a^k b^k c^k n=7: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=9: script = reference TM = membership on all 352 inputs (sorted forms + 300 random) | T=46, 17179 bytes
+PASS a^k b^k c^k n=9: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=9 control: T-1 steps rejects the slowest accepted input
+PASS a^k b^k c^k n=12: script = reference TM = membership on all 391 inputs (sorted forms + 300 random) | T=77, 28748 bytes
+PASS a^k b^k c^k n=12: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=12 control: T-1 steps rejects the slowest accepted input
+PASS a^k b^k c^k n=15: script = reference TM = membership on all 436 inputs (sorted forms + 300 random) | T=116, 43301 bytes
+PASS a^k b^k c^k n=15: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS a^k b^k c^k n=15 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=0: script = reference TM = membership on all 1 inputs (exhaustive) | T=1, 194 bytes
+PASS 0^(2^k) n=0: only never-disabled opcodes executed | OP_1,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_EQUAL,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=1: script = reference TM = membership on all 1 inputs (exhaustive) | T=2, 387 bytes
+PASS 0^(2^k) n=1: only never-disabled opcodes executed | OP_1,OP_2,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=1 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=2: script = reference TM = membership on all 1 inputs (exhaustive) | T=7, 1344 bytes
+PASS 0^(2^k) n=2: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=2 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=3: script = reference TM = membership on all 1 inputs (exhaustive) | T=4, 773 bytes
+PASS 0^(2^k) n=3: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=4: script = reference TM = membership on all 1 inputs (exhaustive) | T=21, 4022 bytes
+PASS 0^(2^k) n=4: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=4 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=5: script = reference TM = membership on all 1 inputs (exhaustive) | T=6, 1159 bytes
+PASS 0^(2^k) n=5: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=6: script = reference TM = membership on all 1 inputs (exhaustive) | T=19, 3644 bytes
+PASS 0^(2^k) n=6: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=7: script = reference TM = membership on all 1 inputs (exhaustive) | T=8, 1545 bytes
+PASS 0^(2^k) n=7: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=8: script = reference TM = membership on all 1 inputs (exhaustive) | T=57, 10906 bytes
+PASS 0^(2^k) n=8: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=8 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=9: script = reference TM = membership on all 1 inputs (exhaustive) | T=10, 1931 bytes
+PASS 0^(2^k) n=9: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=10: script = reference TM = membership on all 1 inputs (exhaustive) | T=31, 5944 bytes
+PASS 0^(2^k) n=10: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=11: script = reference TM = membership on all 1 inputs (exhaustive) | T=12, 2317 bytes
+PASS 0^(2^k) n=11: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=12: script = reference TM = membership on all 1 inputs (exhaustive) | T=61, 11678 bytes
+PASS 0^(2^k) n=12: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=13: script = reference TM = membership on all 1 inputs (exhaustive) | T=14, 2703 bytes
+PASS 0^(2^k) n=13: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=14: script = reference TM = membership on all 1 inputs (exhaustive) | T=43, 8244 bytes
+PASS 0^(2^k) n=14: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=15: script = reference TM = membership on all 1 inputs (exhaustive) | T=16, 3089 bytes
+PASS 0^(2^k) n=15: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=16: script = reference TM = membership on all 1 inputs (exhaustive) | T=145, 27730 bytes
+PASS 0^(2^k) n=16: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=16 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=17: script = reference TM = membership on all 1 inputs (exhaustive) | T=18, 3475 bytes
+PASS 0^(2^k) n=17: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=18: script = reference TM = membership on all 1 inputs (exhaustive) | T=55, 10544 bytes
+PASS 0^(2^k) n=18: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=19: script = reference TM = membership on all 1 inputs (exhaustive) | T=20, 3861 bytes
+PASS 0^(2^k) n=19: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=20: script = reference TM = membership on all 1 inputs (exhaustive) | T=101, 19334 bytes
+PASS 0^(2^k) n=20: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=21: script = reference TM = membership on all 1 inputs (exhaustive) | T=22, 4247 bytes
+PASS 0^(2^k) n=21: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=22: script = reference TM = membership on all 1 inputs (exhaustive) | T=67, 12844 bytes
+PASS 0^(2^k) n=22: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=23: script = reference TM = membership on all 1 inputs (exhaustive) | T=24, 4633 bytes
+PASS 0^(2^k) n=23: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=24: script = reference TM = membership on all 1 inputs (exhaustive) | T=169, 32330 bytes
+PASS 0^(2^k) n=24: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=25: script = reference TM = membership on all 1 inputs (exhaustive) | T=26, 5019 bytes
+PASS 0^(2^k) n=25: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=26: script = reference TM = membership on all 1 inputs (exhaustive) | T=79, 15144 bytes
+PASS 0^(2^k) n=26: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=27: script = reference TM = membership on all 1 inputs (exhaustive) | T=28, 5405 bytes
+PASS 0^(2^k) n=27: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=28: script = reference TM = membership on all 1 inputs (exhaustive) | T=141, 26990 bytes
+PASS 0^(2^k) n=28: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=29: script = reference TM = membership on all 1 inputs (exhaustive) | T=30, 5791 bytes
+PASS 0^(2^k) n=29: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=30: script = reference TM = membership on all 1 inputs (exhaustive) | T=91, 17444 bytes
+PASS 0^(2^k) n=30: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=31: script = reference TM = membership on all 1 inputs (exhaustive) | T=32, 6177 bytes
+PASS 0^(2^k) n=31: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=32: script = reference TM = membership on all 1 inputs (exhaustive) | T=353, 67490 bytes
+PASS 0^(2^k) n=32: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=32 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=33: script = reference TM = membership on all 1 inputs (exhaustive) | T=34, 6563 bytes
+PASS 0^(2^k) n=33: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=34: script = reference TM = membership on all 1 inputs (exhaustive) | T=103, 19744 bytes
+PASS 0^(2^k) n=34: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=35: script = reference TM = membership on all 1 inputs (exhaustive) | T=36, 6949 bytes
+PASS 0^(2^k) n=35: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=36: script = reference TM = membership on all 1 inputs (exhaustive) | T=181, 34646 bytes
+PASS 0^(2^k) n=36: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=37: script = reference TM = membership on all 1 inputs (exhaustive) | T=38, 7335 bytes
+PASS 0^(2^k) n=37: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=38: script = reference TM = membership on all 1 inputs (exhaustive) | T=115, 22044 bytes
+PASS 0^(2^k) n=38: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=39: script = reference TM = membership on all 1 inputs (exhaustive) | T=40, 7721 bytes
+PASS 0^(2^k) n=39: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=40: script = reference TM = membership on all 1 inputs (exhaustive) | T=281, 53754 bytes
+PASS 0^(2^k) n=40: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_7,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=64: script = reference TM = membership on all 1 inputs (exhaustive) | T=833, 159234 bytes
+PASS 0^(2^k) n=64: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=64 control: T-1 steps rejects the slowest accepted input
+PASS 0^(2^k) n=128: script = reference TM = membership on all 1 inputs (exhaustive) | T=1921, 367170 bytes
+PASS 0^(2^k) n=128: only never-disabled opcodes executed | OP_1,OP_2,OP_3,OP_4,OP_5,OP_6,OP_CODESEPARATOR,OP_DROP,OP_DUP,OP_ELSE,OP_ENDIF,OP_EQUAL,OP_FROMALTSTACK,OP_IF,OP_TOALTSTACK
+PASS 0^(2^k) n=128 control: T-1 steps rejects the slowest accepted input
+PASS control: mutated a^k b^k c^k machine disagrees with membership | 5 of 243 inputs
+PASS Ackermann A(0,0)=1 verified in 1 unrolled iterations | 37 bytes, alt depth 2
+PASS Ackermann A(0,1)=2 verified in 1 unrolled iterations | 37 bytes, alt depth 2
+PASS Ackermann A(0,2)=3 verified in 1 unrolled iterations | 37 bytes, alt depth 2
+PASS Ackermann A(0,3)=4 verified in 1 unrolled iterations | 37 bytes, alt depth 2
+PASS Ackermann A(0,4)=5 verified in 1 unrolled iterations | 37 bytes, alt depth 2
+PASS Ackermann A(1,0)=2 verified in 2 unrolled iterations | 66 bytes, alt depth 2
+PASS Ackermann A(1,1)=3 verified in 4 unrolled iterations | 124 bytes, alt depth 3
+PASS Ackermann A(1,2)=4 verified in 6 unrolled iterations | 182 bytes, alt depth 4
+PASS Ackermann A(1,3)=5 verified in 8 unrolled iterations | 240 bytes, alt depth 5
+PASS Ackermann A(1,4)=6 verified in 10 unrolled iterations | 298 bytes, alt depth 6
+PASS Ackermann A(2,0)=3 verified in 5 unrolled iterations | 153 bytes, alt depth 3
+PASS Ackermann A(2,1)=5 verified in 14 unrolled iterations | 414 bytes, alt depth 5
+PASS Ackermann A(2,2)=7 verified in 27 unrolled iterations | 791 bytes, alt depth 7
+PASS Ackermann A(2,3)=9 verified in 44 unrolled iterations | 1284 bytes, alt depth 9
+PASS Ackermann A(2,4)=11 verified in 65 unrolled iterations | 1893 bytes, alt depth 11
+PASS Ackermann A(3,0)=5 verified in 15 unrolled iterations | 443 bytes, alt depth 5
+PASS Ackermann A(3,1)=13 verified in 106 unrolled iterations | 3082 bytes, alt depth 13
+PASS Ackermann A(3,2)=29 verified in 541 unrolled iterations | 15697 bytes, alt depth 29
+PASS Ackermann A(3,3)=61 verified in 2432 unrolled iterations | 70536 bytes, alt depth 61
+PASS Ackermann A(3,4)=125 verified in 10307 unrolled iterations | 298911 bytes, alt depth 125
+
+failures: 0
