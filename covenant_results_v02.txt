@@ -1,0 +1,58 @@
+PASS secp256k1: G is on the curve
+PASS secp256k1: n*G is the point at infinity
+PASS ECDSA sign/verify round trip
+PASS ECDSA rejects a different digest
+PASS ECDSA rejects a different key
+PASS 0.1.5 pay-to-pubkey spend with an honest signature validates
+PASS 0.1.5 pay-to-pubkey spend signed with the wrong key fails
+PASS v02 model also reproduces the OP_1 OP_RETURN defect
+PASS v02 evaluator agrees with v01 on all 243 a^k b^k c^k inputs at n=5
+PASS v02 evaluator verifies A(3,2)=29
+PASS a^k b^k c^k on aabbcc control: successor with a wrong machine state is rejected
+PASS a^k b^k c^k on aabbcc control: successor with one tape cell altered is rejected
+PASS a^k b^k c^k on aabbcc control: a second output is rejected
+PASS a^k b^k c^k on aabbcc control: unlocking script supplying different CODE is rejected
+PASS a^k b^k c^k on aabbcc control: a misstated transaction field is rejected
+PASS a^k b^k c^k on aabbcc control: beneficiary cannot take the funds before acceptance
+PASS a^k b^k c^k on aabbcc control: forged spend with a second output is rejected | 2 cuts, none with serialised field widths
+PASS a^k b^k c^k on aabbcc control: forged spend with a successor carrying substituted code is rejected | 323 cuts, none with serialised field widths
+PASS a^k b^k c^k on aabbcc control: forged spend with the covenant as the second of two inputs is rejected | 2 cuts, none with serialised field widths
+PASS a^k b^k c^k on aabbcc, covenant_v01: forged spend with a second output found and validates | 2 cuts
+PASS a^k b^k c^k on aabbcc, covenant_v01: forged spend with a successor carrying substituted code found and validates | 322 cuts
+PASS a^k b^k c^k on aabbcc, covenant_v01: forged spend with the covenant as the second of two inputs found and validates | 2 cuts
+PASS covenant chain on aabbcc: every transaction validates, 12 transactions
+PASS covenant chain on aabbcc: final state equals the reference machine's | state A
+PASS covenant chain on aabbcc: machine accepts as membership requires
+PASS covenant on aabbcc: beneficiary spends after acceptance
+PASS covenant on aabbcc: a different key cannot spend after acceptance
+PASS covenant chain on aabbc: every transaction validates, 7 transactions
+PASS covenant chain on aabbc: final state equals the reference machine's | state R
+PASS covenant chain on aabbc: machine rejects as membership requires
+PASS covenant on aabbc: beneficiary cannot spend after rejection
+PASS covenant chain on abc: every transaction validates, 4 transactions
+PASS covenant chain on abc: final state equals the reference machine's | state A
+PASS covenant chain on abc: machine accepts as membership requires
+PASS covenant on abc: beneficiary spends after acceptance
+PASS covenant on abc: a different key cannot spend after acceptance
+PASS covenant chain on aabcc: every transaction validates, 5 transactions
+PASS covenant chain on aabcc: final state equals the reference machine's | state R
+PASS covenant chain on aabcc: machine rejects as membership requires
+PASS covenant on aabcc: beneficiary cannot spend after rejection
+PASS binary counter control: successor with a wrong machine state is rejected
+PASS binary counter control: successor with one tape cell altered is rejected
+PASS binary counter control: a second output is rejected
+PASS binary counter control: unlocking script supplying different CODE is rejected
+PASS binary counter control: a misstated transaction field is rejected
+PASS binary counter control: beneficiary cannot take the funds before acceptance
+PASS binary counter control: forged spend with a second output is rejected | 3 cuts, none with serialised field widths
+PASS binary counter control: forged spend with a successor carrying substituted code is rejected | 176 cuts, none with serialised field widths
+PASS binary counter control: forged spend with the covenant as the second of two inputs is rejected | 3 cuts, none with serialised field widths
+PASS binary counter, covenant_v01: forged spend with a second output found and validates | 2 cuts
+PASS binary counter, covenant_v01: forged spend with a successor carrying substituted code found and validates | 174 cuts
+PASS binary counter, covenant_v01: forged spend with the covenant as the second of two inputs found and validates | 2 cuts
+PASS counter covenant: 250 consecutive transactions validate (1,000 machine steps)
+PASS counter covenant: state after 250 transactions equals the reference machine's
+PASS counter covenant: tape holds a binary count and has grown | count 254, 8 bits
+PASS covenant executes opcodes disabled on 15 August 2010 | OP_CAT,OP_LEFT,OP_MOD,OP_RIGHT,OP_SUBSTR
+
+failures: 0

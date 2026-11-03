@@ -1,0 +1,629 @@
+{
+ "checks": [
+  {
+   "name": "secp256k1: G is on the curve",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "secp256k1: n*G is the point at infinity",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "ECDSA sign/verify round trip",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "ECDSA rejects a different digest",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "ECDSA rejects a different key",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0.1.5 pay-to-pubkey spend with an honest signature validates",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "0.1.5 pay-to-pubkey spend signed with the wrong key fails",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "v02 model also reproduces the OP_1 OP_RETURN defect",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "v02 evaluator agrees with v01 on all 243 a^k b^k c^k inputs at n=5",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "v02 evaluator verifies A(3,2)=29",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: successor with a wrong machine state is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: successor with one tape cell altered is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: a second output is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: unlocking script supplying different CODE is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: a misstated transaction field is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: beneficiary cannot take the funds before acceptance",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: forged spend with a second output is rejected",
+   "pass": true,
+   "detail": "2 cuts, none with serialised field widths"
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: forged spend with a successor carrying substituted code is rejected",
+   "pass": true,
+   "detail": "323 cuts, none with serialised field widths"
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc control: forged spend with the covenant as the second of two inputs is rejected",
+   "pass": true,
+   "detail": "2 cuts, none with serialised field widths"
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc, covenant_v01: forged spend with a second output found and validates",
+   "pass": true,
+   "detail": "2 cuts"
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc, covenant_v01: forged spend with a successor carrying substituted code found and validates",
+   "pass": true,
+   "detail": "322 cuts"
+  },
+  {
+   "name": "a^k b^k c^k on aabbcc, covenant_v01: forged spend with the covenant as the second of two inputs found and validates",
+   "pass": true,
+   "detail": "2 cuts"
+  },
+  {
+   "name": "covenant chain on aabbcc: every transaction validates, 12 transactions",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant chain on aabbcc: final state equals the reference machine's",
+   "pass": true,
+   "detail": "state A"
+  },
+  {
+   "name": "covenant chain on aabbcc: machine accepts as membership requires",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant on aabbcc: beneficiary spends after acceptance",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant on aabbcc: a different key cannot spend after acceptance",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant chain on aabbc: every transaction validates, 7 transactions",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant chain on aabbc: final state equals the reference machine's",
+   "pass": true,
+   "detail": "state R"
+  },
+  {
+   "name": "covenant chain on aabbc: machine rejects as membership requires",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant on aabbc: beneficiary cannot spend after rejection",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant chain on abc: every transaction validates, 4 transactions",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant chain on abc: final state equals the reference machine's",
+   "pass": true,
+   "detail": "state A"
+  },
+  {
+   "name": "covenant chain on abc: machine accepts as membership requires",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant on abc: beneficiary spends after acceptance",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant on abc: a different key cannot spend after acceptance",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant chain on aabcc: every transaction validates, 5 transactions",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant chain on aabcc: final state equals the reference machine's",
+   "pass": true,
+   "detail": "state R"
+  },
+  {
+   "name": "covenant chain on aabcc: machine rejects as membership requires",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "covenant on aabcc: beneficiary cannot spend after rejection",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "binary counter control: successor with a wrong machine state is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "binary counter control: successor with one tape cell altered is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "binary counter control: a second output is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "binary counter control: unlocking script supplying different CODE is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "binary counter control: a misstated transaction field is rejected",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "binary counter control: beneficiary cannot take the funds before acceptance",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "binary counter control: forged spend with a second output is rejected",
+   "pass": true,
+   "detail": "3 cuts, none with serialised field widths"
+  },
+  {
+   "name": "binary counter control: forged spend with a successor carrying substituted code is rejected",
+   "pass": true,
+   "detail": "176 cuts, none with serialised field widths"
+  },
+  {
+   "name": "binary counter control: forged spend with the covenant as the second of two inputs is rejected",
+   "pass": true,
+   "detail": "3 cuts, none with serialised field widths"
+  },
+  {
+   "name": "binary counter, covenant_v01: forged spend with a second output found and validates",
+   "pass": true,
+   "detail": "2 cuts"
+  },
+  {
+   "name": "binary counter, covenant_v01: forged spend with a successor carrying substituted code found and validates",
+   "pass": true,
+   "detail": "174 cuts"
+  },
+  {
+   "name": "binary counter, covenant_v01: forged spend with the covenant as the second of two inputs found and validates",
+   "pass": true,
+   "detail": "2 cuts"
+  },
+  {
+   "name": "counter covenant: 250 consecutive transactions validate (1,000 machine steps)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "counter covenant: state after 250 transactions equals the reference machine's",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "name": "counter covenant: tape holds a binary count and has grown",
+   "pass": true,
+   "detail": "count 254, 8 bits"
+  },
+  {
+   "name": "covenant executes opcodes disabled on 15 August 2010",
+   "pass": true,
+   "detail": "OP_CAT,OP_LEFT,OP_MOD,OP_RIGHT,OP_SUBSTR"
+  }
+ ],
+ "runs": [
+  {
+   "machine": "a^k b^k c^k",
+   "input": "aabbcc",
+   "k": 2,
+   "transactions": 12,
+   "code_bytes": 2491,
+   "spk_bytes_first_last": [
+    2518,
+    2519
+   ],
+   "final_state": "A",
+   "seconds": 0.5,
+   "opcodes_used": [
+    "OP_0NOTEQUAL",
+    "OP_1",
+    "OP_10",
+    "OP_11",
+    "OP_12",
+    "OP_13",
+    "OP_14",
+    "OP_15",
+    "OP_16",
+    "OP_1SUB",
+    "OP_2",
+    "OP_2OVER",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_8",
+    "OP_9",
+    "OP_ADD",
+    "OP_CAT",
+    "OP_CHECKSIGVERIFY",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_HASH256",
+    "OP_IF",
+    "OP_LEFT",
+    "OP_LESSTHAN",
+    "OP_MOD",
+    "OP_NIP",
+    "OP_OVER",
+    "OP_PICK",
+    "OP_RIGHT",
+    "OP_ROT",
+    "OP_SIZE",
+    "OP_SUBSTR",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ],
+   "disabled_in_2010_used": [
+    "OP_CAT",
+    "OP_LEFT",
+    "OP_MOD",
+    "OP_RIGHT",
+    "OP_SUBSTR"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "input": "aabbc",
+   "k": 2,
+   "transactions": 7,
+   "code_bytes": 2491,
+   "spk_bytes_first_last": [
+    2517,
+    2518
+   ],
+   "final_state": "R",
+   "seconds": 0.2,
+   "opcodes_used": [
+    "OP_0NOTEQUAL",
+    "OP_1",
+    "OP_10",
+    "OP_11",
+    "OP_12",
+    "OP_13",
+    "OP_14",
+    "OP_15",
+    "OP_16",
+    "OP_1SUB",
+    "OP_2",
+    "OP_2OVER",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_8",
+    "OP_9",
+    "OP_ADD",
+    "OP_CAT",
+    "OP_CHECKSIGVERIFY",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_HASH256",
+    "OP_IF",
+    "OP_LEFT",
+    "OP_LESSTHAN",
+    "OP_MOD",
+    "OP_NIP",
+    "OP_OVER",
+    "OP_PICK",
+    "OP_RIGHT",
+    "OP_ROT",
+    "OP_SIZE",
+    "OP_SUBSTR",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ],
+   "disabled_in_2010_used": [
+    "OP_CAT",
+    "OP_LEFT",
+    "OP_MOD",
+    "OP_RIGHT",
+    "OP_SUBSTR"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "input": "abc",
+   "k": 2,
+   "transactions": 4,
+   "code_bytes": 2491,
+   "spk_bytes_first_last": [
+    2515,
+    2516
+   ],
+   "final_state": "A",
+   "seconds": 0.1,
+   "opcodes_used": [
+    "OP_0NOTEQUAL",
+    "OP_1",
+    "OP_10",
+    "OP_11",
+    "OP_12",
+    "OP_13",
+    "OP_14",
+    "OP_15",
+    "OP_16",
+    "OP_1SUB",
+    "OP_2",
+    "OP_2OVER",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_8",
+    "OP_9",
+    "OP_ADD",
+    "OP_CAT",
+    "OP_CHECKSIGVERIFY",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_HASH256",
+    "OP_IF",
+    "OP_LEFT",
+    "OP_LESSTHAN",
+    "OP_MOD",
+    "OP_NIP",
+    "OP_OVER",
+    "OP_PICK",
+    "OP_RIGHT",
+    "OP_ROT",
+    "OP_SIZE",
+    "OP_SUBSTR",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ],
+   "disabled_in_2010_used": [
+    "OP_CAT",
+    "OP_LEFT",
+    "OP_MOD",
+    "OP_RIGHT",
+    "OP_SUBSTR"
+   ]
+  },
+  {
+   "machine": "a^k b^k c^k",
+   "input": "aabcc",
+   "k": 2,
+   "transactions": 5,
+   "code_bytes": 2491,
+   "spk_bytes_first_last": [
+    2517,
+    2517
+   ],
+   "final_state": "R",
+   "seconds": 0.1,
+   "opcodes_used": [
+    "OP_0NOTEQUAL",
+    "OP_1",
+    "OP_10",
+    "OP_11",
+    "OP_12",
+    "OP_13",
+    "OP_14",
+    "OP_15",
+    "OP_16",
+    "OP_1SUB",
+    "OP_2",
+    "OP_2OVER",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_8",
+    "OP_9",
+    "OP_ADD",
+    "OP_CAT",
+    "OP_CHECKSIGVERIFY",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_HASH256",
+    "OP_IF",
+    "OP_LEFT",
+    "OP_LESSTHAN",
+    "OP_MOD",
+    "OP_NIP",
+    "OP_OVER",
+    "OP_PICK",
+    "OP_RIGHT",
+    "OP_ROT",
+    "OP_SIZE",
+    "OP_SUBSTR",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ],
+   "disabled_in_2010_used": [
+    "OP_CAT",
+    "OP_LEFT",
+    "OP_MOD",
+    "OP_RIGHT",
+    "OP_SUBSTR"
+   ]
+  },
+  {
+   "machine": "binary counter",
+   "input": "",
+   "k": 4,
+   "transactions": 250,
+   "code_bytes": 1823,
+   "spk_bytes_first_last": [
+    1847,
+    1853
+   ],
+   "count": 254,
+   "seconds": 5.7,
+   "opcodes_used": [
+    "OP_0NOTEQUAL",
+    "OP_1",
+    "OP_10",
+    "OP_11",
+    "OP_12",
+    "OP_13",
+    "OP_14",
+    "OP_15",
+    "OP_16",
+    "OP_1SUB",
+    "OP_2",
+    "OP_2OVER",
+    "OP_3",
+    "OP_4",
+    "OP_5",
+    "OP_6",
+    "OP_7",
+    "OP_8",
+    "OP_9",
+    "OP_ADD",
+    "OP_CAT",
+    "OP_CHECKSIGVERIFY",
+    "OP_CODESEPARATOR",
+    "OP_DROP",
+    "OP_DUP",
+    "OP_ELSE",
+    "OP_ENDIF",
+    "OP_EQUAL",
+    "OP_EQUALVERIFY",
+    "OP_FROMALTSTACK",
+    "OP_HASH256",
+    "OP_IF",
+    "OP_LEFT",
+    "OP_LESSTHAN",
+    "OP_MOD",
+    "OP_NIP",
+    "OP_OVER",
+    "OP_PICK",
+    "OP_RIGHT",
+    "OP_ROT",
+    "OP_SIZE",
+    "OP_SUBSTR",
+    "OP_SWAP",
+    "OP_TOALTSTACK"
+   ],
+   "disabled_in_2010_used": [
+    "OP_CAT",
+    "OP_LEFT",
+    "OP_MOD",
+    "OP_RIGHT",
+    "OP_SUBSTR"
+   ]
+  }
+ ],
+ "files": {
+  "script015_v01.py": "f2f5d0484d2c072dbc14ba8aa900ba5af80f85af461a78ba3cf2b9ab15896d1f",
+  "script015_v02.py": "f70a2d45a42a0364e31fdadaaf7f8efee91bb0388e7331af0f7f6d7b61f9338d",
+  "secp256k1_v01.py": "1daa579d4282754855fbd58a540ff8aa2cf31e5113749970b2bb48256e6ee911",
+  "tx015_v01.py": "1c9f085fa312289106ef00a8c73257c72e6a85b5045bf5e767fbe5d374cc544d",
+  "constructions_v01.py": "093a6a7b79f5f6ef5b01a3ee76ca759827143d9c07fb072938ca448efb19db4a",
+  "covenant_v01.py": "12d21e0586330239df4d57cc1f85970a33f96c6b8be1553cbca291968c0e9f4a",
+  "covenant_v02.py": "4a7770a15120bdf16585ea5b404520ef8b871b048b79a757621295c708d32230",
+  "run_covenant_checks_v02.py": "e427ea519f72b97591a64eb0bddacf5777005037d06a29a48926c145a027d910"
+ },
+ "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+ "time_utc": "2026-11-03T09:57:11Z",
+ "failures": 0
+}
